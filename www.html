@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shipintupian</title>
+    <style type="text/css">
+
+html,body{
+width: 100%;
+height: 100%;
+margin: 0;
+position: relative;
+z-index: 0;
+background-image:url("./xbj5.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+ }
+
+ 
+video{
+width:40%;
+height: 50%;
+border-radius: 10%;
+z-index: 2;
+padding: 0;
+
+}
+#shipin1{
+position: absolute;
+left:50%;
+top:15%;
+
+}
+
+#max{
+  position: absolute;
+  width: 44%;
+  height: 41%;
+  align-items: center;
+  margin: 0% ;
+  margin-top: -17%;
+  translate:23% 96% ;
+  z-index: 6;
+}
+.re{
+  position: relative;
+  height: 79%;
+  min-width: 100%;
+
+}
+.re ul{
+  list-style-type:none ;
+  min-width: 127%;
+  height: 14%;
+}
+.re ul>li{
+  width: 170%;
+  height: 168%;
+  position: absolute;
+
+  transition: 2s;
+
+}
+.re ul>li img{
+  width: 39%;
+  height: 66%;
+  border-radius: 14%;
+  border: 15px solid #fffbd6;
+}
+#max ol {
+  position: relative;
+  display: grid;
+  
+
+  grid-template-columns: repeat(5,28px);
+  grid-template-rows: auto;
+  grid-gap: 1em;gap: 1em;
+  float: right;
+  margin-top: 33%;
+  list-style: none;
+  top: 13%;
+  left:-51%;
+}
+#max ol li {
+  width: 57%;
+  height: 26%;
+  font-size: 10px;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  border-radius: 2em;
+  border: 5px solid #999999;
+}
+
+#biaoti{
+  background-image:url("./llgxybsd.jpg");
+    translate: 65% 10%;
+    z-index: 4;
+}
+#anniu{
+  
+  z-index: 10;
+  position: absolute;
+  top: 56%;
+  left: 86%;
+
+}
+
+#zi
+  {
+      font-size:18px;
+      font-weight:bold;
+      width:94%;
+      height: 37%;
+      line-height: 20px;
+      position: absolute;
+      left: 2%;
+      top:61%;
+      color:rgb(249, 158, 123);
+      z-index: 0;
+      
+  }
+
+
+
+
+</style>
+<script>
+    window.onload = function(){
+  var box=this.document.getElementsByClassName("re")[0];
+  var lik=box.getElementsByTagName("li");
+  function fun(i,j){//转换图片函数，就是把透明度改了一下
+    lik[i].style.opacity=1;
+    lik[j].style.opacity=0;
+    lik[i+5].style.backgroundColor="#ffffff";//改一下小图标
+    lik[j+5].style.backgroundColor="#00000000"
+  }
+  fun(0,1);//初始化下
+  var i =0;
+  function auto(){//轮播循环函数
+    if(++i>=5){
+      i=0;
+      fun(0,4);
+    }
+    else fun(i,i-1);
+  }
+  timer=this.setInterval(auto,2000);
+  box.onmouseover = function () { //鼠标划上去，停止轮播
+    console.log('good');
+    clearInterval(timer);
+  }
+  box.onmouseout = function () { //鼠标划出，继续轮播
+    timer = setInterval(auto, 2000); //调用定时器
+  }
+  var j =0;
+  for(;j<5;j++){//点击小图标也可以转换图片
+    lik[j+5].ind=j;
+    lik[j+5].onclick=function(){
+      fun(this.ind,i)
+      i=this.ind;
+    }
+  }
+
+
+  showshi();
+  function showshi()
+  {
+      var s= document.getElementById("wai");
+      if(parseInt(s.style.width)<1200)
+      {
+      var w=parseInt(s.style.width)+4;
+      s.style.width=w+"px";
+      window.setTimeout("showshi()",5);
+      }
+  }
+}
+</script>
+
+</head>
+<body>
+     <div>
+      
+      <div id="back">  
+       </div>
+          <video id="shipin1" src="dongwu.mp4" width="100px" height="400px"
+          controls="controls"
+         poster="liulangmao.jpg">
+          </video>
+          <img id="biaoti" src="./llgxybsd.jpg" width="47%" height="20%">
+          
+          <div id="zi">
+            <a href="xiaolu.html">  
+              <img id="anniu" src="anniu.png" width="100px" height="50px" />
+            </a>
+            <p>
+            <br>2019年11月，浙江宁波交通技工学校的一宿管员当着学生的面，将一只狗从高空扔下阳台，狗狗当场死亡.</br>
+      
+            <br>2020年4月，山东理工大学一大四男生对流浪猫用剥皮、掏肠、火烧、电击等残忍的方式虐待，并拍摄视频通过
+          网络进行宣传、贩卖。仅仅两个月，就有80多只无辜的猫惨死在他的手下。</br>
+
+               
+            <br>2021年11月25日，电视剧《当家主母》剧组疑似“毒死”真猫。</br>
+              
+            <br> 2021年11月，江西省上饶市一小区在未与宠物主人充分沟通的情况下，对隔离宠物进行强制扑杀。</br>
+              
+            <br>2023年8月28日有博主爆料，广西省南宁市工商银行某支行员工疑为虐猫视频发布者，曾出售虐杀怀孕流浪猫视频，并伴有录音证明。</br>
+              
+            <br>2023年某站博主杰克辣条（原名：徐某辉）以虐杀猫咪为乐，在其妻子（陈某娟）的配合下，徐某辉不仅将虐杀过程拍摄成视频放到网络上传播，还组建Q虐群进行无耻的炫耀.</br>
+            
+          ……
+            </p>
+          </div> 
+          <div id="max" >
+            <div class="re">
+                <ul>
+                    <li><img src="cat2.jpg" alt=""></li>
+                    <li><img src="cat3.jpg" alt=""></li>
+                    <li><img src="cat4.jpg" alt=""></li>
+                    <li><img src="cat5.jpg" alt=""></li>
+                    <li><img src="cat6.jpg" alt=""></li>
+                </ul>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+          
+      
+
+             
+        </div>
+        
+    
+      
+        
+      </div>
+      
+
+
+      
+    </div>
+</body>
+        </html>

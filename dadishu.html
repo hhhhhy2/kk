@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打地鼠</title>
+    <style type="text/css">
+        body{
+          background-image:url("xbj5.jpg");
+          background-repeat:no-repeat;
+          min-width: 1100px;
+          height: 550px;
+          background-size: cover;
+          
+        }
+        h3{
+          text-indent: 200px;
+          font-size: 50px;
+          letter-spacing: 10px;
+          margin: 100px;
+        }
+        .main{
+          width:390px;
+          height: 390px;
+          position:absolute;
+        
+          transform: translate(200px,-100px);
+          
+          display: grid;
+          grid-template-columns: 130px 130px 130px;
+          grid-template-rows: 130px 130px 130px;
+        }
+        .item{
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+        .item img{
+          width: 97%;
+          position:absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          display: none;
+
+        }
+        .item .xiaotou{
+          width: 65%;
+
+        }
+        .item .didong{
+          display: block;
+
+        }
+        #fan{
+            width: 10%;
+            height: 8%;
+            position: absolute;
+            left: 85%;
+            top: 90%;
+        }
+        #jie{
+            width: 10%;
+            height: 8%;
+            position: absolute;
+            left: 5%;
+            top: 90%;
+        }
+        #m1{
+          position: absolute;
+          left: 55%;
+          top: 29%;
+        }
+        #m2{
+          position: absolute;
+          left: 80%;
+          top: 23%;
+        }
+        #m3{
+          position: absolute;
+          left: 55%;
+          top: 69%;
+        }
+        #m4{
+          position: absolute;
+          left: 85%;
+          top: 59%;
+        }
+        #m5{
+          position: absolute;
+          top: 40%;
+          left: 5%;
+        }
+        #m6{
+          position: absolute;
+          top: 2%;
+          left: 34%;
+        }
+        #m7{
+          position: absolute;
+          left: 62%;
+          top: 45%;
+          z-index: -1;
+        }
+    </style>
+</head> 
+<body>
+  <h3>积分: <span class="score">0</span></h3> 
+  <div class="main">
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+
+    </div>
+
+  </div>
+  <div class="item">
+    <div class="item"> 
+      <img class="didong" src="yuanquan.png" alt="">
+      <img class="xiaotou" src="xiaotou.png" alt="">
+      <img class="boom" src="boom.png" alt="">
+
+    </div>
+
+  </div>
+  
+
+
+  </div>
+
+<div>
+  <a href="maos.html"><img id="fan" src="js.jpg" ></a>
+  <a href="xiaolu.html"><img id="jie" src="fh.jpg" ></a>
+</div>
+<div>
+  <img id="m1" src="mao1.jpg" width="13%" height="23%">
+  <img id="m2" src="mao2.jpg" width="13%" height="20%">
+  <img id="m3" src="gou1.jpg" width="13%" height="23%">
+  <img id="m4" src="gou2.jpg" width="11%" height="21%">
+  <img id="m5" src="zz.jpg" width="7%" height="36%">
+  <img id="m6" src="zii.jpg" width="47%" height="15%">
+  <img id="m7" src="xz.jpg" width="30%" height="30%">
+</div>  
+
+</body>
+</html>
+<script>
+  var xiaotouPleace=document.querySelectorAll(".xiaotou");
+  var scoreBox=document.querySelector(".score");
+  var score=0;
+  for(var i=0;i<xiaotouPleace.length;i++)
+  {
+    //给每个小偷绑定点击事件,当点击小偷的时候
+    //1让小偷消失，2，boom出现3，积分改变
+
+    xiaotouPleace[i].onclick=function(){
+      this.style.display="none";
+      this.parentElement.lastElementChild.style.display="block";
+      var _that=this;
+      score+=100;
+    
+      var timer=setInterval(function(){
+       clearTimeout(timer);
+       timer=null;
+        _that.parentElement.lastElementChild.style.display="none";
+
+      },260);
+
+      scoreBox.innerHTML=score;
+
+
+    }
+
+  }
+  setInterval(function(){
+  var i=Math.floor(Math.random()*9);//0-1得到的范围是多少，九个格子0-8
+
+    xiaotouPleace[i].style.display="block";
+
+
+
+
+  },1000);
+</script>

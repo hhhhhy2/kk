@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+            
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 1030px;
+            height: 640px;
+            background: url("xbj5.jpg");
+        
+            background-repeat: no-repeat;
+            justify-content: center;
+            min-width: 1100px;
+            height: 550px;
+        }
+
+        
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 0;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+
+        /*.return {
+            width: 8%;
+            height: 8%;
+            position: relative;
+            left: 80%;
+            top: 0%;
+            cursor: pointer;
+        }*/
+        .return {
+            width: 10%;
+            height: 8%;
+            position: absolute;
+            left: 85%;
+            top: 99.5%;
+            
+        }
+        .fina{
+            width: 10%;
+            height: 8%;
+            position: absolute;
+            left: 5%;
+            top: 99.5%;
+        }
+
+        .title{
+            width: 90%;
+            height: 10%;
+            position: relative;
+            left: 2%;
+            top: 5%;
+            /*background-color: #57a2df;*/
+            font-family: 'FZCHSJW';
+            color: darkblue;
+            /*text-align: center;*/
+        }
+
+        .topic {
+            width: 90%;
+            height: 65%;
+            position: relative;
+            left: 5%;
+            top: 10%;
+            /*background-color: #57a2df;*/
+            font-family: 'FZCHSJW';
+            color: darkblue;
+            /*text-align: center;*/
+        }
+
+        .qst {
+            width: 100%;
+            height: 16%;
+            font-size: 30px;
+            float: left;
+            text-align: left;
+        }
+
+        .qst1 {
+            width: 100%;
+            height: 16%;
+            font-size: 30px;
+            float: left;
+            text-align: center;
+        }
+
+        .option {
+            float: left;
+            height: 12%;
+            width: 100%;
+            font-size: 23px;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+
+        .op-content {
+            width: 40%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .result {
+            width: 15%;
+            height: 40%;
+            position: relative;
+            left: 70%;
+            top: 50%;
+            /*background-color: chartreuse;*/
+        }
+
+        .bg {
+            width: 17%;
+            height: 40%;
+            position: relative;
+            left: 55%;
+            top: 65%;
+            background: url("gg.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wrongbg {
+            width: 20%;
+            height: 42%;
+            position: relative;
+            left: 55%;
+            top: 65%;
+            background: url("cc.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .last {
+            width: 20%;
+            height: 25%;
+            position: relative;
+            top: -40%;
+            left: 13%;
+            cursor: pointer;
+        }
+
+        .next {
+            width: 20%;
+            height: 25%;
+            position: relative;
+            top: -65%;
+            left: 38%;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #w1{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 58%;
+            top: 10%;
+        }
+        #w2{
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 84%;
+            top: 30%;
+        }
+        #w3{
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 74%;
+            top: 63%;
+        }
+        #w4{
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 5%;
+            top: 43%;
+        }
+
+        #w5{
+            min-width: 1200px;
+            height: 200px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    
+    <div class="content">
+        <div class="content1">
+            <div class="return">
+                <a href="tis.html"><img src="js.jpg" ></a>
+            </div>
+            
+            <div class="fina">
+                <a href="xiaolu.html"><img src="fh.jpg" ></a>
+            </div>
+            
+            <div class="title">
+                <div class="qst1" id="qst1">小测试</div>
+            </div>
+            <div class="topic">
+                <div class="qst" id="qst">1.下列属于国家一级保护动物的是( )</div>
+                <div class="option">
+                    <div class="op-content" id="opa" onclick="showResult('A')">
+                        A:娃娃鱼
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="op-content" id="opb" onclick="showResult('B')">
+                        B:孔雀
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="op-content" id="opc" onclick="showResult('C')">
+                        C:丹顶鹤
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="op-content" id="opd" onclick="showResult('D')">
+                        D:天鹅
+                    </div>
+                </div>
+                <div class="result" id="rt">
+                </div>
+            </div>
+            <div id="w5">
+                <img id="w1" src="bin.png">
+                <img id="w2" src="tun.png">
+                <img id="w3" src="hhe.png">
+                <img id="w4" src="mao.png">
+            </div>
+            <div class="last" onclick="showlast()">
+                <img src="jtz.png" >
+            </div>
+            <div class="next" onclick="shownext()">
+                <img src="jty.png">
+            </div>
+   
+            
+
+        </div>
+    </div>
+    <script>
+        function createTest(question, optionA, optionB, optionC, optionD, answer) {
+            var o = new Object();
+            o.question = question;
+            o.optionA = optionA;
+            o.optionB = optionB;
+            o.optionC = optionC;
+            o.optionD = optionD;
+            o.answer = answer;
+            return o;
+        }
+
+        //初始化题库
+        var arr = new Array(5);
+        arr[0] = createTest("1、下列属于国家一级保护动物的是( ) " ," A. 娃娃鱼 ","B.孔雀", "C.丹顶鹤"," D.天鹅", "C");
+        arr[1] = createTest("2. 以下哪种海洋动物被列为濒危物种( )", "A.海豚", "B.海星","C.海牛 ","D. 海欧", "C");
+        arr[2] = createTest("3. 自然野生生物基金会的会徽是( )","A.丹顶鹤 ","B.大熊猫","C.骆驼",  " D.娃娃鱼","B");
+        arr[3] = createTest("4、白鳍豚的生活区域位于( )中", "A:长江", "B:南海", "C:黄海", "D:黄河", "A");
+        arr[4] = createTest("5、下列两栖动物是濒危动物的是( ) ", "A:蟾蜍", "B:青蛙", "C:蝾螈", "D:红色箭毒蛙", "D");
+        //全局变量计数
+        var count = 0;
+        var myAnswer = new Array(5);
+        for (var i = 0; i < myAnswer.length; i++)
+            myAnswer[i] = "无";
+
+        //上一题
+        function showlast() {
+
+            if (count <= 0) {
+                alert("当前是第一题！");
+                count = 0;
+            } else {
+                count--;
+                var wrong = document.getElementById("rt");
+                console.log(wrong.className);
+                wrong.setAttribute("class", "result");
+            }
+            Print();//打印题目
+            img();
+        }
+
+        //下一题
+        function shownext() {
+            console.log(count);
+            if (count == 5) {
+                alert("当前已是最后一题！");
+                count = 4;
+            } else {
+                count++;
+                console.log(count);
+                var wrong = document.getElementById("rt");
+                console.log(wrong.className);
+                wrong.setAttribute("class", "result");
+            }
+            Print();//打印题目
+        }
+
+        //打印题目
+        function Print() {
+
+            console.log("print");
+            var content = document.getElementById("qst");
+            content.firstChild.nodeValue = arr[count].question;
+            var opa = document.getElementById("opa");
+            opa.lastChild.nodeValue = arr[count].optionA;
+            var opb = document.getElementById("opb");
+            opb.lastChild.nodeValue = arr[count].optionB;
+            var opc = document.getElementById("opc");
+            opc.lastChild.nodeValue = arr[count].optionC;
+            var opd = document.getElementById("opd");
+            opd.lastChild.nodeValue = arr[count].optionD;
+
+        }
+        function img() {
+            document.getElementById("optionA").style.backgroundImage = 'url(' + '../images/a.png' + ')';
+            document.getElementById("optionB").style.backgroundImage = 'url(' + '../images/b.png' + ')';
+            document.getElementById("optionC").style.backgroundImage = 'url(' + '../images/c.png' + ')';
+            document.getElementById("optionD").style.backgroundImage = 'url(' + '../images/d.png' + ')';
+        }
+        function imgChange(myanswer) {
+            if (myanswer == "A") {
+                document.getElementById("optionA").style.backgroundImage = 'url(' + '../images/aR.png' + ')';
+            }
+            if (myanswer == "B") {
+                document.getElementById("optionB").style.backgroundImage = 'url(' + '../images/bR.png' + ')';
+            }
+            if (myanswer == "C") {
+                document.getElementById("optionC").style.backgroundImage = 'url(' + '../images/cR.png' + ')';
+            }
+            if (myanswer == "D") {
+                document.getElementById("optionD").style.backgroundImage = 'url(' + '../images/dR.png' + ')';
+            }
+        }
+        function showResult(getObjs) {
+            console.log(getObjs);
+            if (getObjs == arr[count].answer) {
+                // img();
+                console.log("right");
+                var div = document.getElementById("rt");
+                console.log(div.className);
+                div.setAttribute("class", "bg");
+                // imgChange(getObjs);
+
+            } else {
+                // img();
+                var wrong = document.getElementById("rt");
+                console.log(wrong.className);
+                wrong.setAttribute("class", "wrongbg");
+                // imgChange(getObjs);
+            }
+
+        }
+        function jump() {
+            window.location.href = "./xiaolu.html";
+        }
+    </script>
+</body>
+
+</html>

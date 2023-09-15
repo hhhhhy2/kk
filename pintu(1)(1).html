@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>逃出马戏团</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+body{
+
+min-width: 1440px;
+width: 100%;
+height: 950px;
+
+display: flex;
+position: relative;
+z-index: 0;
+ }
+ #back{
+min-width: 1470px;
+width: 100%;
+height: 950px;
+background-image:url("./xbj6.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+position: absolute;
+z-index: 1;
+ }
+      #anniu{
+        width: 10%;
+        height: 8%;
+        position: absolute;
+        left: 82%;
+        top: 88%;
+      }
+      #hui{
+        width: 10%;
+        height: 8%;
+        position: absolute;
+        left: 10%;
+        top: 88%;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="back"> 
+ 
+      <a href="pins.html"><img id="anniu" src="js.jpg" width="50%" height="50%" /></a>
+    <a href="xiaolu.html"><img id="hui" src="fh.jpg" /></a>
+      <div class="cover-screen">
+      <p id="result"></p>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="moves"></div>
+    <div class="slider-game">
+      <div class="container"></div>
+      <div class="original-image"></div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>
